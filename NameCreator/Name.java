@@ -6,7 +6,7 @@ public class Name {
 	private int mLetterNum;
 	
 	public Name(String name, int LetterNum) {
-		mName = name;
+		mName = name.toLowerCase();
 		mLetterNum = LetterNum;
 	}
 	
@@ -14,7 +14,6 @@ public class Name {
 		mName = replaceName;
 	}
 	
-	//toString kind of replaces this
 	public String getName() {
 		return mName;
 	}
@@ -41,10 +40,6 @@ public class Name {
 		
 	}
 	
-	public String toString() {
-		mName = ""+mName;
-		return mName;
-	}
 	
 
 }
