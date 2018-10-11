@@ -3,7 +3,6 @@ package medialibrary;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
-import java.util.List;
 
 public class MediaLibrary {
 	
@@ -24,11 +23,9 @@ public class MediaLibrary {
 		//Run through arraylist and object to print details
 		public void printMedia(){
 			for(int i = 0; i < library.size(); i++){
-				for(int j = 0; j < 1 ; j++){
-					System.out.println(library.get(j));
-					
+				System.out.println(library.get(i).getName());
+				System.out.println(library.get(i).getDescr());	
 				}
-			}
 		}
 		
 		//Searches array list (if library array -> objectAtIndex.getName().contains(name we're looking for)
@@ -49,7 +46,8 @@ public class MediaLibrary {
 			
 			test.addMedia(mySong);
 			test.addMedia(anotherSong);
-			test.findMedia("Joseph");
+			//test.findMedia("Joseph");
+			test.printMedia();
 		}
 			
 		
